@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\CefSharp.Common.130.1.90\build\CefSharp.Common.props" Condition="Exists('packages\CefSharp.Common.130.1.90\build\CefSharp.Common.props')" />
+  <Import Project="packages\chromiumembeddedframework.runtime.win-x86.130.1.9\build\chromiumembeddedframework.runtime.win-x86.props" Condition="Exists('packages\chromiumembeddedframework.runtime.win-x86.130.1.9\build\chromiumembeddedframework.runtime.win-x86.props')" />
+  <Import Project="packages\chromiumembeddedframework.runtime.win-x64.130.1.9\build\chromiumembeddedframework.runtime.win-x64.props" Condition="Exists('packages\chromiumembeddedframework.runtime.win-x64.130.1.9\build\chromiumembeddedframework.runtime.win-x64.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BFA1C21-7404-45B8-8B59-F9321D2573A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Saturn_Browser.My.MyApplication</StartupObject>
+    <RootNamespace>Saturn_Browser</RootNamespace>
+    <AssemblyName>Saturn Browser</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Saturn Browser.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Saturn Browser.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\antipos\Expire\H Browser\bin\x86\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp, Version=130.1.90.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>packages\CefSharp.Common.130.1.90\lib\net462\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=130.1.90.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>packages\CefSharp.Common.130.1.90\lib\net462\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=130.1.90.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>packages\CefSharp.WinForms.130.1.90\lib\net462\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="CmlLib.Core, Version=4.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CmlLib.Core.4.0.6\lib\netstandard2.0\CmlLib.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CmlLib.Core.Commons, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CmlLib.Core.Commons.4.0.0\lib\netstandard2.0\CmlLib.Core.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\antipos\Expire\dasdsad\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.9, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.9.0.9\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.3, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.8.0.3\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenAI, Version=2.8.0.0, Culture=neutral, PublicKeyToken=b4187f3e65366280, processorArchitecture=MSIL">
+      <HintPath>packages\OpenAI.2.8.0\lib\netstandard2.0\OpenAI.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZip, Version=19.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\LZMA-SDK.19.0.0\lib\net20\SevenZip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ClientModel, Version=1.8.1.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>packages\System.ClientModel.1.8.1\lib\netstandard2.0\System.ClientModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.Data.8.0.1\lib\net462\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.ServerSentEvents, Version=9.0.0.9, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.ServerSentEvents.9.0.9\lib\net462\System.Net.ServerSentEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.8.0.6\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Dataflow.8.0.1\lib\net462\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL">
+      <HintPath>packages\InputSimulator.1.0.4.0\lib\net20\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appearence.Designer.vb">
+      <DependentUpon>appearence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="appearence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications.Designer.vb">
+      <DependentUpon>Applications.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Applications.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookmarks.Designer.vb">
+      <DependentUpon>bookmarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bookmarks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="config.Designer.vb">
+      <DependentUpon>config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="config.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="devtools.Designer.vb">
+      <DependentUpon>devtools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="devtools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="documents.Designer.vb">
+      <DependentUpon>documents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="documents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Downloads.Designer.vb">
+      <DependentUpon>Downloads.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Downloads.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ai.Designer.vb">
+      <DependentUpon>ai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game.Designer.vb">
+      <DependentUpon>game.vb</DependentUpon>
+    </Compile>
+    <Compile Include="game.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.vb">
+      <DependentUpon>Games.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Games.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inception.Designer.vb">
+      <DependentUpon>Inception.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inception.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InceptionCloud.Designer.vb">
+      <DependentUpon>InceptionCloud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InceptionCloud.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InceptionVM.Designer.vb">
+      <DependentUpon>InceptionVM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InceptionVM.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfinityCode.Designer.vb">
+      <DependentUpon>InfinityCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfinityCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kick.Designer.vb">
+      <DependentUpon>kick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuhandler.vb" />
+    <Compile Include="Minecraft.Designer.vb">
+      <DependentUpon>Minecraft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Minecraft.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="musique.Designer.vb">
+      <DependentUpon>musique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="onlinegame.Designer.vb">
+      <DependentUpon>onlinegame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="onlinegame.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaturnView.Designer.vb">
+      <DependentUpon>SaturnView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SaturnView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaturnWebView.Designer.vb">
+      <DependentUpon>SaturnWebView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SaturnWebView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Socials.Designer.vb">
+      <DependentUpon>Socials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Socials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tempmail.Designer.vb">
+      <DependentUpon>tempmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tempmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tiktok.Designer.vb">
+      <DependentUpon>tiktok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tiktok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twitch.Designer.vb">
+      <DependentUpon>twitch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="twitch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="videoeditor.Designer.vb">
+      <DependentUpon>videoeditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="videoeditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.vb">
+      <DependentUpon>Video.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Video.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="youtube.Designer.vb">
+      <DependentUpon>youtube.vb</DependentUpon>
+    </Compile>
+    <Compile Include="youtube.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ai.resx">
+      <DependentUpon>ai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appearence.resx">
+      <DependentUpon>appearence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications.resx">
+      <DependentUpon>Applications.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookmarks.resx">
+      <DependentUpon>bookmarks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config.resx">
+      <DependentUpon>config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devtools.resx">
+      <DependentUpon>devtools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="documents.resx">
+      <DependentUpon>documents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Downloads.resx">
+      <DependentUpon>Downloads.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game.resx">
+      <DependentUpon>game.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inception.resx">
+      <DependentUpon>Inception.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InceptionCloud.resx">
+      <DependentUpon>InceptionCloud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InceptionVM.resx">
+      <DependentUpon>InceptionVM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfinityCode.resx">
+      <DependentUpon>InfinityCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kick.resx">
+      <DependentUpon>kick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Minecraft.resx">
+      <DependentUpon>Minecraft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musique.resx">
+      <DependentUpon>musique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onlinegame.resx">
+      <DependentUpon>onlinegame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaturnView.resx">
+      <DependentUpon>SaturnView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaturnWebView.resx">
+      <DependentUpon>SaturnWebView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Socials.resx">
+      <DependentUpon>Socials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tempmail.resx">
+      <DependentUpon>tempmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tiktok.resx">
+      <DependentUpon>tiktok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twitch.resx">
+      <DependentUpon>twitch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="videoeditor.resx">
+      <DependentUpon>videoeditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="youtube.resx">
+      <DependentUpon>youtube.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\favicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2993667_ubuntu_brand_logo_logos_brands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2993661_logo_brands_brand_windows_logos_microsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2993704_brand_logos_android_brands_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouTube_full-color_icon_%282017%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4138149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\channels4_profile %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globoplay_logo_2020.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiktok-6338432_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicondarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicongreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconlimegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconpink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faviconaqua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\cob2eh.jpg" />
+    <None Include="Resources\Adobe_Audition_CS6_Icon.png" />
+    <None Include="Resources\21764-256x256x32.png" />
+    <None Include="Resources\Video-Music.png" />
+    <None Include="Resources\Text-txt.svg.png" />
+    <None Include="Resources\PowerPoint.png" />
+    <None Include="Resources\PDF_file_icon.svg.png" />
+    <None Include="Resources\Office_Word_2007_logo.svg.png" />
+    <None Include="Resources\Office_Excel_2007_logo.svg.png" />
+    <None Include="Resources\image_icon_153794.png" />
+    <None Include="Resources\create-java-jar.png" />
+    <None Include="Resources\Adobe_Premiere_Pro_CS6_Icon.png" />
+    <None Include="Resources\Adobe_Photoshop_CS6_icon.png" />
+    <None Include="Resources\Adobe_Illustrator_Icon_%28CS6%29.svg.png" />
+    <None Include="Resources\Adobe_Flash_Professional_CS6_icon.png" />
+    <None Include="Resources\Adobe_Fireworks_CS6_Icon.png" />
+    <None Include="Resources\Adobe_Dreamweaver_CS6_Icon.png" />
+    <None Include="Resources\Windows_11_executable.svg.png" />
+    <None Include="Resources\jhjkh.png" />
+    <None Include="Resources\6b32c54a-09aa-4112-88f6-25a7d1f2ee26.png" />
+    <None Include="Resources\picapicapicapica.png" />
+    <None Include="Resources\spotify--v3.png" />
+    <None Include="Resources\popos____.png" />
+    <None Include="Resources\Zorin_OS.png" />
+    <None Include="Resources\debian.png" />
+    <None Include="Resources\2993693_logo_brand_finder_logos_brands.png" />
+    <None Include="Resources\xp.png" />
+    <None Include="Resources\windows11.png" />
+    <None Include="Resources\kick.png" />
+    <None Include="Resources\b0c9bf1ffdf2c49e5b6e06e263823501.png" />
+    <None Include="Resources\8bccf8713efaae09b71ae37946c38c8d.png" />
+    <None Include="Resources\co67wl.jpg" />
+    <None Include="Resources\533cee001828ee5fed3f1cceb83b05c6.png" />
+    <None Include="Resources\2e2681fd151b91f1a4c31c1f6e4ca887.png" />
+    <None Include="Resources\20bf9d9cd34058952120bedb87179b22.png" />
+    <None Include="Resources\d2eea404fd47fd5f84fff26748eb5331.png" />
+    <None Include="Resources\697199a91bce9c978d9025ce25380216.png" />
+    <None Include="Resources\2fa96ed6da7eab0592a28af7a7ae87b5.jpg" />
+    <None Include="Resources\4ac01ffdf0ae169300e3aaa2b945deb0.png" />
+    <None Include="Resources\c61063869dba29aa86d7b8839e6c4576.png" />
+    <None Include="Resources\Reddit_Icon_FullColor.png" />
+    <None Include="Resources\P-Badge-Red-RGB.png" />
+    <None Include="Resources\Facebook_logo_%28square%29.png" />
+    <None Include="Resources\X.png" />
+    <None Include="Resources\instragam.png" />
+    <None Include="Resources\telegram1.jpeg" />
+    <None Include="Resources\telegram.jpeg" />
+    <None Include="Resources\Telegram.png" />
+    <None Include="Resources\whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" />
+    <None Include="Resources\whatsapp.png" />
+    <None Include="Resources\Discord-Symbol-White.png" />
+    <None Include="Resources\Linux-Mint-icon-logo-256-big.png" />
+    <None Include="Resources\shopping_bag_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\logo_adguard_light.png" />
+    <None Include="Resources\mail_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\video_library_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\Imagem1s.png" />
+    <None Include="Resources\docs_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\code_blocks_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" />
+    <None Include="Resources\games.png" />
+    <None Include="Resources\imagghje.png" />
+    <None Include="Resources\tux-g2.png" />
+    <None Include="Resources\Android-Logo-2008.png" />
+    <None Include="Resources\Finder_Icon_macOS_Big_Sur.png" />
+    <None Include="Resources\Windows_logo_-_2012.svg.png" />
+    <None Include="Resources\exe.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\24cf8ebf500af43ae8d84c26b8e7ff2c %281%29.png" />
+    <None Include="Resources\301597ca9b9c8bd0bac29d8864a35105.jpg" />
+    <None Include="Resources\pngimg.com - camera_lens_PNG12.png" />
+    <None Include="Resources\iPhone_14_Pro_Max_Deep_Purple_Front.png" />
+    <None Include="Resources\MV5BZGUwNzVkODgtNjBhYy00MjU1LTkyNjYtMmQ1YzBhYWI3ZjVhXkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg" />
+    <None Include="Resources\102464_Worlds_Hardest_Game.png" />
+    <None Include="Resources\scraft.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\cud.jpg" />
+    <None Include="Resources\hq720.jpg" />
+    <None Include="Resources\cu.jpg" />
+    <None Include="Resources\vbn.jpg" />
+    <None Include="Resources\ghj.jpg" />
+    <None Include="Resources\MV5BZGEyYzg5MjYtZGQ3NS00ZWFmLTg4N2QtODdmMzlkMTNiN2ViXkEyXkFqcGc%40._V1_.jpg" />
+    <None Include="Resources\63062d965dac31a67054913efdaafc66.png" />
+    <None Include="Resources\MV5BMmJiZDI1MjItNDg0NS00ZDA5LWIyOWEtOTY1M2I3ODZlMGQwXkEyXkFqcGc%40._V1_QL75_UX190_CR0,2,190,281_.jpg" />
+    <None Include="Resources\92135_Breaking_the_Bank.png" />
+    <None Include="Resources\GameTile_com.fancyforce.happywheels.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxRDPCOMAPILib">
+      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSTSCLib">
+      <Guid>{8C11EFA1-92C3-11D1-BC1E-00C04FA31489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\chromiumembeddedframework.runtime.win-x64.130.1.9\build\chromiumembeddedframework.runtime.win-x64.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\chromiumembeddedframework.runtime.win-x64.130.1.9\build\chromiumembeddedframework.runtime.win-x64.props'))" />
+    <Error Condition="!Exists('packages\chromiumembeddedframework.runtime.win-x86.130.1.9\build\chromiumembeddedframework.runtime.win-x86.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\chromiumembeddedframework.runtime.win-x86.130.1.9\build\chromiumembeddedframework.runtime.win-x86.props'))" />
+    <Error Condition="!Exists('packages\CefSharp.Common.130.1.90\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CefSharp.Common.130.1.90\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('packages\CefSharp.Common.130.1.90\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CefSharp.Common.130.1.90\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="packages\CefSharp.Common.130.1.90\build\CefSharp.Common.targets" Condition="Exists('packages\CefSharp.Common.130.1.90\build\CefSharp.Common.targets')" />
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Saturn Browser", "Saturn Browser.vbproj", "{2BFA1C21-7404-45B8-8B59-F9321D2573A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BFA1C21-7404-45B8-8B59-F9321D2573A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFA1C21-7404-45B8-8B59-F9321D2573A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFA1C21-7404-45B8-8B59-F9321D2573A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFA1C21-7404-45B8-8B59-F9321D2573A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05A114F3-FEAA-4A11-A21F-0A647C5C8DF4}
+	EndGlobalSection
+EndGlobal
