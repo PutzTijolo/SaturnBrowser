@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="docs_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docs_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Text_txt_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Text-txt.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2e2681fd151b91f1a4c31c1f6e4ca887" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2e2681fd151b91f1a4c31c1f6e4ca887.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="create_java_jar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\create-java-jar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6b32c54a-09aa-4112-88f6-25a7d1f2ee26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6b32c54a-09aa-4112-88f6-25a7d1f2ee26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Facebook_logo_(square)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facebook_logo_(square).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="code_blocks_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\code_blocks_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Office_Word_2007_logo_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office_Word_2007_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="debian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\debian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P-Badge-Red-RGB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P-Badge-Red-RGB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Imagem1s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagem1s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tiktok-6338432_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tiktok-6338432_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconaqua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconaqua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconpurple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconpurple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="channels4_profile (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\channels4_profile (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spotify--v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spotify--v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linux-Mint-icon-logo-256-big" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linux-Mint-icon-logo-256-big.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_icon_153794" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_icon_153794.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconlimegreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconlimegreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_library_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video_library_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mail_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mail_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PowerPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerPoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reddit_Icon_FullColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reddit_Icon_FullColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Audition_CS6_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Audition_CS6_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Office_Excel_2007_logo_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Office_Excel_2007_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="games" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\games.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDF_file_icon_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PDF_file_icon.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicondarkblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicondarkblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconpink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconpink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Photoshop_CS6_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Photoshop_CS6_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Fireworks_CS6_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Fireworks_CS6_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4138149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4138149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picapicapicapica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picapicapicapica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hq720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hq720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2993704_brand_logos_android_brands_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2993704_brand_logos_android_brands_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows_11_executable.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Windows_11_executable.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Flash_Professional_CS6_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Flash_Professional_CS6_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telegram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telegram.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finder_Icon_macOS_Big_Sur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finder_Icon_macOS_Big_Sur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="instragam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\instragam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconyellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconyellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_bag_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping_bag_100dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Discord-Symbol-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Discord-Symbol-White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d2eea404fd47fd5f84fff26748eb5331" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d2eea404fd47fd5f84fff26748eb5331.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagghje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagghje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="301597ca9b9c8bd0bac29d8864a35105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\301597ca9b9c8bd0bac29d8864a35105.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="63062d965dac31a67054913efdaafc66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\63062d965dac31a67054913efdaafc66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faviconred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faviconred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whatsapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whatsapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ghj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ghj.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_adguard_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_adguard_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cud.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicongreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicongreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameTile_com.fancyforce.happywheels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameTile_com.fancyforce.happywheels.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="697199a91bce9c978d9025ce25380216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\697199a91bce9c978d9025ce25380216.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2993667_ubuntu_brand_logo_logos_brands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2993667_ubuntu_brand_logo_logos_brands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV5BZGUwNzVkODgtNjBhYy00MjU1LTkyNjYtMmQ1YzBhYWI3ZjVhXkEyXkFqcGc@._V1_FMjpg_UX1000_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MV5BZGUwNzVkODgtNjBhYy00MjU1LTkyNjYtMmQ1YzBhYWI3ZjVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="24cf8ebf500af43ae8d84c26b8e7ff2c (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24cf8ebf500af43ae8d84c26b8e7ff2c (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scraft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jhjkh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jhjkh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vbn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vbn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c61063869dba29aa86d7b8839e6c4576" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c61063869dba29aa86d7b8839e6c4576.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="533cee001828ee5fed3f1cceb83b05c6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\533cee001828ee5fed3f1cceb83b05c6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YouTube_full-color_icon_(2017).svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YouTube_full-color_icon_(2017).svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4ac01ffdf0ae169300e3aaa2b945deb0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4ac01ffdf0ae169300e3aaa2b945deb0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="102464_Worlds_Hardest_Game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\102464_Worlds_Hardest_Game.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popos____" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popos____.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Android-Logo-2008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Android-Logo-2008.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngimg.com - camera_lens_PNG12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngimg.com - camera_lens_PNG12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Dreamweaver_CS6_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Dreamweaver_CS6_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV5BZGEyYzg5MjYtZGQ3NS00ZWFmLTg4N2QtODdmMzlkMTNiN2ViXkEyXkFqcGc@._V1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MV5BZGEyYzg5MjYtZGQ3NS00ZWFmLTg4N2QtODdmMzlkMTNiN2ViXkEyXkFqcGc@._V1_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_21764_256x256x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21764-256x256x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2993661_logo_brands_brand_windows_logos_microsoft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2993661_logo_brands_brand_windows_logos_microsoft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Video_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Video-Music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows_logo_-_2012.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Windows_logo_-_2012.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zorin_OS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zorin_OS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8bccf8713efaae09b71ae37946c38c8d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8bccf8713efaae09b71ae37946c38c8d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iPhone_14_Pro_Max_Deep_Purple_Front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iPhone_14_Pro_Max_Deep_Purple_Front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2993693_logo_brand_finder_logos_brands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2993693_logo_brand_finder_logos_brands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2fa96ed6da7eab0592a28af7a7ae87b5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2fa96ed6da7eab0592a28af7a7ae87b5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b0c9bf1ffdf2c49e5b6e06e263823501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b0c9bf1ffdf2c49e5b6e06e263823501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Globoplay_logo_2020.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Globoplay_logo_2020.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Premiere_Pro_CS6_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Premiere_Pro_CS6_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tux-g2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tux-g2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20bf9d9cd34058952120bedb87179b22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20bf9d9cd34058952120bedb87179b22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="co67wl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\co67wl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_Illustrator_Icon__CS6__svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe_Illustrator_Icon_(CS6).svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cob2eh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cob2eh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
